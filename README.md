@@ -1,82 +1,250 @@
-<h1 align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=F7F7F7&center=true&vCenter=true&random=false&width=435&lines=Hey+there!+%F0%9F%91%8B;I'm+Anthony+Campos...;Welcome+to+my+GitHub!" alt="Typing SVG" /></a>
-</h1>
+'use client'
 
-<p align="center">
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-</p>
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Button } from "@/components/ui/button"
+import { Progress } from "@/components/ui/progress"
+import { Badge } from "@/components/ui/badge"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Sparkles, Code, Brain, Rocket, Trophy, Heart, Github, Twitter, Mail, Linkedin } from 'lucide-react'
 
-<h3 align="center">🎓 Northeastern University Student | 💡 AI Enthusiast | 🚀 App Developer</h3>
+export default function Component() {
+  const [xp, setXp] = useState(0)
+  const [level, setLevel] = useState(1)
+  const [activeProject, setActiveProject] = useState(0)
+  const [showHologram, setShowHologram] = useState(false)
 
-<p align="center">
-  <img src="https://media3.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300">
-</p>
+  const projects = [
+    { name: 'Avisari', description: 'AI-powered personal assistant' },
+    { name: 'Nota', description: 'Quantum-encrypted note-taking app' },
+    { name: 'Dormeal', description: 'Teleportation-based food delivery service' },
+    { name: 'EduConnect', description: 'Holographic classroom experience' },
+  ]
 
-<details>
-<summary>🧠 About Me</summary>
-<br>
+  useEffect(() => {
+    const xpTimer = setInterval(() => {
+      setXp(prevXp => (prevXp + 1) % 100)
+    }, 100)
 
-- 🔭 Currently working on integrating LLMs into police bodycams
-- 🌱 Always exploring new technologies and AI applications
-- 💼 Aspiring to create efficient user experiences through AI
-- 🎯 Goal: Contribute to innovative tech solutions
-- ⚡ Fun fact: I can solve a Rubik's cube in under 2 minutes!
+    const levelTimer = setInterval(() => {
+      setLevel(prevLevel => prevLevel + 1)
+    }, 10000)
 
-</details>
+    const projectTimer = setInterval(() => {
+      setActiveProject(prevProject => (prevProject + 1) % projects.length)
+    }, 5000)
 
-<details>
-<summary>🛠️ Skills & Technologies</summary>
-<br>
+    return () => {
+      clearInterval(xpTimer)
+      clearInterval(levelTimer)
+      clearInterval(projectTimer)
+    }
+  }, [])
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=py,react,ts,nextjs,aws,nodejs,docker,git" />
-</p>
+  return (
+    <div className="min-h-screen bg-black text-neon-blue flex flex-col items-center justify-center p-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        className="w-full max-w-4xl"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="bg-dark-purple p-8 rounded-lg shadow-neon"
+          >
+            <div className="flex items-center space-x-4 mb-6">
+              <Avatar className="w-20 h-20 ring-2 ring-neon-pink">
+                <AvatarImage src="/placeholder.svg?height=80&width=80" alt="Anthony" />
+                <AvatarFallback>AC</AvatarFallback>
+              </Avatar>
+              <div>
+                <h1 className="text-3xl font-bold text-neon-pink">Anthony Campos</h1>
+                <p className="text-neon-green">Level {level} Code Wizard</p>
+              </div>
+            </div>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=radical" alt="Top Languages" />
-</p>
+            <motion.div
+              animate={{ width: `${xp}%` }}
+              className="h-2 bg-neon-green mb-4 rounded-full"
+            />
 
-<details>
-<summary>🚀 Featured Projects</summary>
-<br>
+            <div className="flex justify-between mb-6">
+              <Badge variant="outline" className="text-xl border-neon-blue">
+                <Sparkles className="w-4 h-4 mr-2" />
+                {xp}/100 XP
+              </Badge>
+              <Badge variant="outline" className="text-xl border-neon-pink">
+                <Rocket className="w-4 h-4 mr-2" />
+                Cyberpunk Coder
+              </Badge>
+            </div>
 
-<p align="center">
-  <a href="https://github.com/yourusername/avisari">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=yourusername&repo=avisari&theme=radical" />
-  </a>
-  <a href="https://github.com/yourusername/nota">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=yourusername&repo=nota&theme=radical" />
-  </a>
-</p>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="bg-dark-blue p-4 rounded-lg mb-6"
+            >
+              <h2 className="font-bold flex items-center mb-2 text-neon-yellow">
+                <Code className="w-5 h-5 mr-2" />
+                Current Quest
+              </h2>
+              <p>Integrating LLMs into police bodycams for superhuman law enforcement!</p>
+            </motion.div>
 
-<p align="center">
-  <a href="https://github.com/yourusername/dormeal">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=yourusername&repo=dormeal&theme=radical" />
-  </a>
-  <a href="https://github.com/yourusername/educonnect">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=yourusername&repo=educonnect&theme=radical" />
-  </a>
-</p>
+            <div className="mb-6">
+              <h2 className="font-bold flex items-center mb-2 text-neon-orange">
+                <Brain className="w-5 h-5 mr-2" />
+                Neural Network
+              </h2>
+              {['Python', 'React', 'TypeScript', 'Next.js', 'AWS'].map((skill, index) => (
+                <motion.div
+                  key={skill}
+                  initial={{ width: 0 }}
+                  animate={{ width: '100%' }}
+                  transition={{ duration: 1, delay: index * 0.2 }}
+                  className="h-2 bg-neon-blue mb-2 rounded-full"
+                />
+              ))}
+            </div>
+          </motion.div>
 
-</details>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="bg-dark-purple p-8 rounded-lg shadow-neon"
+          >
+            <h2 className="font-bold flex items-center mb-4 text-neon-yellow text-2xl">
+              <Trophy className="w-6 h-6 mr-2" />
+              Cybernetic Achievements
+            </h2>
+            <ul className="space-y-4">
+              <motion.li
+                whileHover={{ scale: 1.1 }}
+                className="bg-dark-blue p-3 rounded-lg flex items-center"
+              >
+                <span className="text-2xl mr-2">🧠</span>
+                AI Mastermind
+              </motion.li>
+              <motion.li
+                whileHover={{ scale: 1.1 }}
+                className="bg-dark-blue p-3 rounded-lg flex items-center"
+              >
+                <span className="text-2xl mr-2">🚀</span>
+                Quantum Code Deployer
+              </motion.li>
+              <motion.li
+                whileHover={{ scale: 1.1 }}
+                className="bg-dark-blue p-3 rounded-lg flex items-center"
+              >
+                <span className="text-2xl mr-2">🌐</span>
+                Neurolink Navigator
+              </motion.li>
+            </ul>
 
-<h2 align="center">🤝 Let's Connect!</h2>
+            <motion.div
+              className="mt-8 p-4 bg-dark-blue rounded-lg"
+              animate={{ 
+                boxShadow: ['0 0 0 0 rgba(0, 255, 255, 0.7)', '0 0 0 10px rgba(0, 255, 255, 0)'],
+              }}
+              transition={{ 
+                repeat: Infinity, 
+                duration: 2
+              }}
+            >
+              <h3 className="text-neon-green text-xl mb-2">Featured Project:</h3>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeProject}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <h4 className="text-neon-pink text-lg">{projects[activeProject].name}</h4>
+                  <p>{projects[activeProject].description}</p>
+                </motion.div>
+              </AnimatePresence>
+            </motion.div>
+          </motion.div>
+        </div>
 
-<p align="center">
-  <a href="mailto:anthonyrubencampos@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://twitter.com/heyanthonny"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" /></a>
-  <a href="https://discord.com/users/heyanthonny"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/yourusername/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-</p>
+        <motion.div 
+          className="mt-8 flex justify-center space-x-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+        >
+          <motion.a 
+            href="https://github.com/yourusername" 
+            whileHover={{ scale: 1.2, rotate: 360 }}
+            className="text-neon-blue hover:text-neon-pink"
+          >
+            <Github size={32} />
+          </motion.a>
+          <motion.a 
+            href="mailto:anthonyrubencampos@gmail.com" 
+            whileHover={{ scale: 1.2, rotate: 360 }}
+            className="text-neon-blue hover:text-neon-pink"
+          >
+            <Mail size={32} />
+          </motion.a>
+          <motion.a 
+            href="https://twitter.com/heyanthonny" 
+            whileHover={{ scale: 1.2, rotate: 360 }}
+            className="text-neon-blue hover:text-neon-pink"
+          >
+            <Twitter size={32} />
+          </motion.a>
+          <motion.a 
+            href="https://www.linkedin.com/in/yourusername" 
+            whileHover={{ scale: 1.2, rotate: 360 }}
+            className="text-neon-blue hover:text-neon-pink"
+          >
+            <Linkedin size={32} />
+          </motion.a>
+        </motion.div>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yourusername&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views">
-</p>
+        <motion.div 
+          className="mt-8 text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5 }}
+        >
+          <Button 
+            onClick={() => setShowHologram(!showHologram)}
+            className="bg-neon-purple hover:bg-neon-pink text-white"
+          >
+            Toggle Holographic Message
+          </Button>
+        </motion.div>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/saadeghi/saadeghi/master/dino.gif" width="100%">
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer"/>
-</p>
+        <AnimatePresence>
+          {showHologram && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0 }}
+              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+              onClick={() => setShowHologram(false)}
+            >
+              <motion.div 
+                className="bg-dark-purple p-8 rounded-lg text-neon-green text-center"
+                animate={{ 
+                  boxShadow: ['0 0 0 0 rgba(0, 255, 255, 0.7)', '0 0 0 20px rgba(0, 255, 255, 0)'],
+                }}
+                transition={{ 
+                  repeat: Infinity, 
+                  duration: 2
+                }}
+              >
+                <h2 className="text-2xl mb-4">Greetings, fellow coder!</h2>
+                <p>Welcome to my cybernetic realm of innovation.</p>
+                <p>Let's shape the future, one line of code at a time.</p>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.div>
+    </div>
+  )
+}
