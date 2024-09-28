@@ -2,7 +2,9 @@
 
 <div align="center">
 
-![Animated Welcome](https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/welcome.png)
+![Welcome](https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/welcome.gif)
+
+<img src="https://your-image-hosting-url.com/anthony-avatar.png" width="200" height="200" alt="Anthony's Avatar">
 
 </div>
 
