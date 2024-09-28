@@ -1,18 +1,14 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=Hey+there!+👋;I'm+Anthony...;Welcome+to+my+GitHub!&center=true&size=30">
-</h1>
+# <div align="center">👋 Hey there! I'm Anthony Campos</div>
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=AI+Enthusiast;App+Developer;Northeastern+University+Student&center=true&width=380&height=50">
+</div>
 
 <p align="center">
   <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 </p>
 
-<h3 align="center">🎓 Northeastern University Student | 💡 AI Enthusiast | 🚀 App Developer</h3>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%">
-</p>
-
-<h2>🧠 About Me</h2>
+## 🧠 About Me
 
 <img align="right" height="150" width="150" alt="GIF" src="https://media.giphy.com/media/3o7TKUM3IgJBX2as9O/giphy.gif"/>
 
@@ -26,10 +22,12 @@
   <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 </p>
 
-<h2>🛠️ Skills & Technologies</h2>
+## 🛠️ Skills & Technologies
 
 <p align="center">
-  <img src="https://i.giphy.com/media/LMt9638dO8dftAjtco/200.webp" width="100"><img src="https://i.giphy.com/media/IdyAQJVN2kVPNUrojM/200.webp" width="100"><img src="https://i.giphy.com/media/KzJkzjggfGN5Py6nkT/200.webp" width="100">
+  <img src="https://i.giphy.com/media/LMt9638dO8dftAjtco/200.webp" width="100">
+  <img src="https://i.giphy.com/media/IdyAQJVN2kVPNUrojM/200.webp" width="100">
+  <img src="https://i.giphy.com/media/KzJkzjggfGN5Py6nkT/200.webp" width="100">
 </p>
 
 <details>
@@ -45,27 +43,53 @@
   <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 </p>
 
-<h2>📊 GitHub Stats</h2>
+## 📌 Pinned Repositories
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=radical" alt="GitHub Streak"/>
-</p>
+### [Avisari](https://github.com/yourusername/avisari)
+<img align="right" width="100" height="100" src="https://media.giphy.com/media/3o7TKMt1VVNkHV2PaE/giphy.gif">
 
-<details>
-  <summary>More Stats</summary>
-  
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical" alt="GitHub Stats"/>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=radical" alt="Top Languages"/>
-  </p>
-  
-</details>
+A comprehensive platform revolutionizing university operations, focusing on college advising and student financial services.
+
+- **Tech Stack**: Next.js, React, TypeScript, Tailwind CSS, Supabase
+- **Key Features**: Student-Advisor Connection, Course Selection Assistance, Financial Services Integration
+
+### [Nota](https://github.com/yourusername/nota)
+<img align="right" width="100" height="100" src="https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif">
+
+A comprehensive mobile application designed to simplify university life for students.
+
+- **Tech Stack**: React Native, Appwrite, AWS Lambda, Claude API
+- **Key Features**: Course management, Assignment tracking, GPA calculation, Personalized insights
+
+### [Dormeal](https://github.com/yourusername/dormeal)
+<img align="right" width="100" height="100" src="https://media.giphy.com/media/3o7bu8sRnYpTOG1p8k/giphy.gif">
+
+A gig-based food delivery service web application for students and restaurants on campus.
+
+- **Tech Stack**: HTML, CSS, JavaScript, Flask, Stripe API
+- **Key Features**: On-campus food delivery, Lower delivery costs, Efficient delivery model
+
+### [EduConnect](https://github.com/yourusername/educonnect)
+<img align="right" width="100" height="100" src="https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif">
+
+A web application that pairs students with instructors based on learning style compatibility.
+
+- **Tech Stack**: Python, Flask, Selenium, LLM integration
+- **Key Features**: Custom ranking algorithm, Web scraping, LLM-powered analysis
+
+### [Portfolio Website](https://github.com/yourusername/portfolio)
+<img align="right" width="100" height="100" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif">
+
+My personal portfolio website showcasing skills, projects, and personal information.
+
+- **Tech Stack**: Next.js 14, React 18, TypeScript, Tailwind CSS, Framer Motion
+- **Key Features**: Responsive design, Interactive UI elements, Smooth transitions
 
 <p align="center">
   <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 </p>
 
-<h2>🤝 Let's Connect!</h2>
+## 🤝 Let's Connect!
 
 <p align="center">
   <a href="mailto:anthonyrubencampos@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
@@ -75,10 +99,6 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=yourusername&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views">
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 </p>
 
 <h4 align="center">Thanks for visiting! Have a great day! 👋</h4>
