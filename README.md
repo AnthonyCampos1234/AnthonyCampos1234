@@ -24,10 +24,9 @@
 
 ## 👨‍💻 About Me
 
-- 🔭 Currently working on integrating LLMs into police bodycams
+- 🔭 Currently working on integrating LLMs into police bodycams and bringing bulk sales to all e-commerce sites
 - 🌱 Always exploring new technologies and AI applications
-- 🎯 Goal: Contribute to innovative tech solutions
-- ⚡ Fun fact: I can solve a Rubik's cube in under 2 minutes!
+- 🎯 Goal: Contribute to innovative AI tech solutions
 
 ## 🛠 Tech Stack
 
