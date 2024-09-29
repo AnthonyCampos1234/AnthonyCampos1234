@@ -39,26 +39,6 @@
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
 </p>
 
-## 🚀 Featured Projects
-
-<div align="center">
-  <a href="https://github.com/yourusername/avisari">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=yourusername&repo=avisari&theme=radical" />
-  </a>
-  <a href="https://github.com/yourusername/nota">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=yourusername&repo=nota&theme=radical" />
-  </a>
-</div>
-
-<div align="center">
-  <a href="https://github.com/yourusername/dormeal">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=yourusername&repo=dormeal&theme=radical" />
-  </a>
-  <a href="https://github.com/yourusername/educonnect">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=yourusername&repo=educonnect&theme=radical" />
-  </a>
-</div>
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%">
 </div>
