@@ -28,7 +28,7 @@
 - 🌱 Always exploring new technologies and AI applications
 - 🎯 Goal: Contribute to innovative AI tech solutions
 
-## 🛠 Tech Stack
+## 🛠 Skills
 
 <p align="center">
   <!-- Languages -->
@@ -46,7 +46,6 @@
   <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native">
   <img src="https://img.shields.io/badge/Cursor_AI-20232A?style=for-the-badge&logo=ai&logoColor=white" alt="Cursor AI">
   <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase">
-  <img src="https://img.shields.io/badge/Adobe_Animate-FF61F6?style=for-the-badge&logo=adobe-animate&logoColor=white" alt="Adobe Animate">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js">
   <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo">
